@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;700&display=swap');
+
+:root{
+    --card_radius: 25px;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+
+body{
+    background: #000000;
+    font-family: 'Quicksand', sans-serif;
+}
+
+
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding-top: 20px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid white;
+}
+
+.header{
+    border-bottom: 1px solid white;
+}
+
+.header_item{
+    display: inline-block;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.figure_img{
+    width: 14px;
+}
+
+.header_link{
+    background: white;
+    padding: 8px 35px;
+    border-radius: 150px;
+    color: black;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.container{
+    width: 95%;
+    margin: 30px auto;
+}
+
+.main_title{
+    padding-bottom: 20px;
+    font-size: 2.5rem;
+    font-weight: 200;
+}
+
+.main_information{
+    width: 85%;
+    margin: 0 auto;
+}
+
+.main_parrafo{
+    font-size: 2rem;
+    font-weight: 200;
+}
+
+
+/*section iphone*/
+
+.section_iphone{
+    padding-top: 40px;
+    background-image: linear-gradient(to top, #e6e9f0 0%, #eef1f5 100%);
+    text-align: center;
+}
+
+.iphone_info_title_pre{
+    color: #585258;
+    font-size: 2.5rem;
+    display: inline-block;
+}
+
+.iphone_info_title_iphone{
+    display: block;
+    color: black;
+    font-size: 1.5rem;
+    font-weight: 200;
+    margin-top: 10px;
+}
+
+.iphone_info_links{
+    margin-top: 40px;
+}
+
+.info_links_buy{
+    background: #6d90c9;
+    padding: 10px 25px;
+    border-radius: 150px;
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+    margin-right: 20px;
+}
+
+
+.info_links_learnmore{
+    color: #6d90c9;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+.info_links_learnmore:hover{
+    text-decoration: underline;
+}
+
+.iphone_div_photo{
+    margin-top: 40px;
+    overflow: hidden;
+}
+
+.iphone_info_photo{
+    width: 390px;
+    filter: drop-shadow(3px 3px 5px #ACC2D2);
+}
+
+/*Cards caracteristicas*/
+
+.iphone_caracteristicas{
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    margin: 50px auto;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+}
+
+.caracteristicas_card{
+    background-color: #f5f5f7;
+    padding: 30px;
+    width: 270px;
+    height: 270px;
+    overflow: hidden;
+    border-radius: var(--card_radius);
+}
+
+.main{
+    padding: 50px 0;
+}
+
+.section_iphone{
+    padding: 80px 0;
+}
+
+.footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    border-top: 1px solid white;
+    padding: 30px 0;
+}
+
+.footer_items{
+    list-style-type: none;
+}
+
+.footer_item{
+    margin-bottom: 8px;
+    cursor: pointer;
+}
+
+.footer_item:hover{
+    text-decoration: underline;
+    color: #6d90c9;
+}
+
+.title_footer{
+    width: 80%;
+    margin: 0 auto;
+    padding-bottom: 25px ;
+}
+
+
+@media (max-width: 450px){
+    .nav{
+        flex-direction: column;
+        gap: 10px;
+    }      
+
+    .main_parrafo{
+        font-size: 20px;
+    }
+
+    .iphone_div_photo{
+        margin: 30px auto;
+        width: 80%;
+    }
+
+    .iphone_info_photo{
+        width: 100%;
+    }
+}
